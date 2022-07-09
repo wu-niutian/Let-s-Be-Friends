@@ -11,6 +11,8 @@
 		CC1845C428794CB5008CD6EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1845C328794CB5008CD6EE /* ContentView.swift */; };
 		CC1845C628794CB9008CD6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1845C528794CB9008CD6EE /* Assets.xcassets */; };
 		CC1845C928794CB9008CD6EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1845C828794CB9008CD6EE /* Preview Assets.xcassets */; };
+		CC1845D028794CCC008CD6EE /* Friend .swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1845CF28794CCC008CD6EE /* Friend .swift */; };
+		CC1845D22879601B008CD6EE /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1845D12879601B008CD6EE /* FriendDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		CC1845C328794CB5008CD6EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC1845C528794CB9008CD6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC1845C828794CB9008CD6EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC1845CF28794CCC008CD6EE /* Friend .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend .swift"; sourceTree = "<group>"; };
+		CC1845D12879601B008CD6EE /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				CC1845C128794CB5008CD6EE /* Let_s_Be_FriendsApp.swift */,
 				CC1845C328794CB5008CD6EE /* ContentView.swift */,
+				CC1845D12879601B008CD6EE /* FriendDetailView.swift */,
+				CC1845CF28794CCC008CD6EE /* Friend .swift */,
 				CC1845C528794CB9008CD6EE /* Assets.xcassets */,
 				CC1845C728794CB9008CD6EE /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC1845C428794CB5008CD6EE /* ContentView.swift in Sources */,
+				CC1845D028794CCC008CD6EE /* Friend .swift in Sources */,
 				CC1845C228794CB5008CD6EE /* Let_s_Be_FriendsApp.swift in Sources */,
+				CC1845D22879601B008CD6EE /* FriendDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
