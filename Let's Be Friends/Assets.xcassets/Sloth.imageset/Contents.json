@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Sloth-hanging-from-tree-GettyImages-1290105028-eda72cd.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

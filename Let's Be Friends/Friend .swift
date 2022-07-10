@@ -15,4 +15,7 @@ struct Friend: Identifiable {
     var gender: String
     var favDoraChracter: String 
     var icon: String
+    
+    var attack: Double
+    var defence: Double
 }
