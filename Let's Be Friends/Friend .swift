@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Friend: Identifiable {
+struct Friend: Identifiable, Equatable {
     var id = UUID() 
     
     var name: String
@@ -15,7 +15,15 @@ struct Friend: Identifiable {
     var gender: String
     var favDoraChracter: String 
     var icon: String
+    var slothImage: String 
+    // var slothImage: String
+    // 3 pics: name is sloth1, sloth2, sloth3 etc.
+    // in the ContentView, inside the arrray friend, name the slothImage to every FRIEND, eg. name: "Benjamin"...... slothImage: "sloth1"
+    // in the FriendDetailView, under Image, put it as "friend.slothImage"
+    //and its settled 
     
     var attack: Double
     var defence: Double
+    
+    var types: [FriendType]
 }

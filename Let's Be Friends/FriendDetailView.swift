@@ -35,6 +35,19 @@ struct FriendDetailView: View {
                     .shadow(radius: 6)
                     .padding(.bottom, -maxProfilePicSize / 2)
                 
+                HStack{
+                    ForEach(friend.types, id: \.rawValue) { type in
+                        Label(type.rawValue, systemImage: type.getSymbolName())
+                            .padding(10)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                }
+                .padding()
+                .offset(y: 110)
+                
+                
                 HStack {
                     Image(systemName: "heart.fill")
                     Text("\(friend.gender)")
@@ -55,7 +68,7 @@ struct FriendDetailView: View {
                            step: 1)
                 }
                 .padding()
-                .offset(y: 150)
+                .offset(y: 120)
                 
                 
                 
@@ -68,6 +81,14 @@ struct FriendDetailView: View {
 
 struct FriendDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FriendDetailView(friend: .constant (Friend(name: "Benjamin", age: 59, gender: "Female", favDoraChracter: "Is Very Hot", icon: "Flame", attack: 10, defence: 15)))
+        FriendDetailView(friend: .constant (Friend(name: "Benjamin",
+                                                   age: 59,
+                                                   gender: "Female",
+                                                   favDoraChracter: "Is Very Hot",
+                                                   icon: "Flame",
+                                                   slothImage: "Sloth",
+                                                   attack: 10,
+                                                   defence: 15,
+                                                   types: [.ice, .fire])))
     }
 }
