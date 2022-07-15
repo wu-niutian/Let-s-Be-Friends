@@ -10,42 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     
-    
-    @State var friends = [
-        Friend(name: "Benjamin",
-               age: 58,
-               gender: "Female",
-               favDoraChracter: "Very Hot",
-               icon:"flame",
-               slothImage: "Sloth", attack: 10,
-               defence: 15,
-               types: [.ice, .fire]),
-        Friend(name: "Jack",
-               age: 99,
-               gender: "Unknown",
-               favDoraChracter: "Beetles",
-               icon: "music.quarternote.3",
-               slothImage: "Sloth", attack: 15,
-               defence: 13,
-               types: [.electric, .grass]),
-        Friend(name: "Azarias",
-               age: 29,
-               gender: "Male",
-               favDoraChracter: "Badminton",
-               icon: "sportscourt",
-               slothImage: "Sloth", attack: 12,
-               defence: 9,
-               types: [.normal, .water]),
-        Friend(name: "Shaun",
-               age: 1,
-               gender: "Female",
-               favDoraChracter: "Ronaldo SIUUUU",
-               icon: "gamecontroller.fill",
-               slothImage: "Sloth", attack: 6,
-               defence: 9,
-               types: [.fire, .electric])
-    ]
-    
+    @Binding var friends: [Friend]
+   
     @State var isSheetPresented = false
     
     var body: some View {
@@ -98,12 +64,44 @@ struct ContentView: View {
                 FriendView(friends: $friends)}
             
         }
-
+        
     }
     
-        struct ContentView_Previews: PreviewProvider {
-            static var previews: some View {
-                ContentView()
-            }
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView(friends: .constant([Friend(name: "Benjamin",
+                                                   age: 58,
+                                                   gender: "Female",
+                                                   favDoraChracter: "Very Hot",
+                                                   icon:"flame",
+                                                   slothImage: "Sloth", attack: 10,
+                                                   defence: 15,
+                                                   types: [.ice, .fire]),
+                                            Friend(name: "Jack",
+                                                   age: 99,
+                                                   gender: "Unknown",
+                                                   favDoraChracter: "Beetles",
+                                                   icon: "music.quarternote.3",
+                                                   slothImage: "Sloth", attack: 15,
+                                                   defence: 13,
+                                                   types: [.electric, .grass]),
+                                            Friend(name: "Azarias",
+                                                   age: 29,
+                                                   gender: "Male",
+                                                   favDoraChracter: "Badminton",
+                                                   icon: "sportscourt",
+                                                   slothImage: "Sloth", attack: 12,
+                                                   defence: 9,
+                                                   types: [.normal, .water]),
+                                            Friend(name: "Shaun",
+                                                   age: 1,
+                                                   gender: "Female",
+                                                   favDoraChracter: "Ronaldo SIUUUU",
+                                                   icon: "gamecontroller.fill",
+                                                   slothImage: "Sloth", attack: 6,
+                                                   defence: 9,
+                                                   types: [.fire, .electric])
+                                        ]))
         }
+    }
 }
